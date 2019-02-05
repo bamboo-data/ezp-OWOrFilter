@@ -1,0 +1,15 @@
+{
+    "name": "aplia/oworfilter",
+    "description": "Provides an extended attribute filter for 'Object relation' and 'Object relations' datatypes.",
+    "keywords": ["ezextension", "filter", "extended attribute filter"],
+    "homepage": "https://github.com/Aplia/oworfilter",
+    "type": "ezpublish-legacy-extension",
+    "license": "GPL-2.0",
+    "extra": {
+        "ezpublish-legacy-extension-name": "oworfilter"
+    },
+    "require": {
+        "php": ">=5.3",
+        "composer/composer": ">=1.0"
+    }
+}
