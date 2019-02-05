@@ -1,0 +1,15 @@
+{
+    "name": "aplia/oworfilter",
+    "description": "Children indexer allows you to index subitems as an attribute of the parent node. It also works with eZFind.",
+    "keywords": ["ezextension", "filter", "extended attribute filter"],
+    "homepage": "https://github.com/Aplia/oworfilter",
+    "type": "ezpublish-legacy-extension",
+    "license": "GPL-2.0",
+    "extra": {
+        "ezpublish-legacy-extension-name": "oworfilter"
+    },
+    "require": {
+        "php": ">=5.3",
+        "composer/composer": ">=1.0"
+    }
+}

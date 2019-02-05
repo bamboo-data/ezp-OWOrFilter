@@ -11,6 +11,14 @@ This filter is used like any extended attribute filter, as explained on the
 documentation for the content/list fetch function:
 http://doc.ez.no/eZ-Publish/Technical-manual/4.x/Reference/Modules/content/Fetch-functions/list
 
+Installation
+-------------------------
+
+Install with Composer:
+```
+composer require aplia/oworfilter
+```
+
 ---------------------------------------------
 Examples :
 ---------------------------------------------
@@ -24,9 +32,9 @@ Single object_id, single attribute :
 	                                array('classe1/attribut1', 61)
 	                              )
 	                          )))}
-                          
-                          
-Multiple object_ids, single attribute  :
+
+
+Multiple object_ids, single attribute :
 ---------------------------------------------
 	{def $nodeList = fetch(content, list, hash(
 								'parent_node_id', XX,
@@ -36,10 +44,10 @@ Multiple object_ids, single attribute  :
 	                              			array('classe1/attribut1', array(70, 71), 'or')
 	                              			)
 	                          )))}
-                          
-                          
 
-Multiple object_ids, multiple attributes  :
+
+
+Multiple object_ids, multiple attributes :
 ---------------------------------------------
 	{def $nodeList = fetch(content, list, hash(
 								'parent_node_id', XX,
@@ -52,12 +60,5 @@ Multiple object_ids, multiple attributes  :
 	                              			)
 	                          )))}
 
-
-
-
-
 ---------------------------------------------
-Hope you find it useful! 
-
-Simon Boyer
 
