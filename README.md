@@ -29,40 +29,58 @@ Examples :
 
 Single object_id, single attribute :
 ---------------------------------------------
-	{def $nodeList = fetch(content, list, hash(parent_node_id, XX,
-	                          extended_attribute_filter, hash(
-	                              'id', 'orfilter',
-	                              'params', array(
-	                                array('classe1/attribut1', 61)
-	                              )
-	                          )))}
+
+```tpl
+{def $nodeList = fetch(content, list,
+	hash(
+		parent_node_id, XX,
+		extended_attribute_filter, hash(
+			'id', 'orfilter',
+			'params', array(
+				array('classe1/attribut1', 61)
+		      )
+		)
+	)
+)}
+```
 
 
 Multiple object_ids, single attribute :
 ---------------------------------------------
-	{def $nodeList = fetch(content, list, hash(
-								'parent_node_id', XX,
-	        					'extended_attribute_filter', hash(
-	                              		'id', 'orfilter',
-	                              		'params', array(
-	                              			array('classe1/attribut1', array(70, 71), 'or')
-	                              			)
-	                          )))}
+
+```tpl
+{def $nodeList = fetch(content, list,
+	hash(
+		'parent_node_id', XX,
+		'extended_attribute_filter', hash(
+			'id', 'orfilter',
+			'params', array(
+				array('classe1/attribut1', array(70, 71), 'or')
+			)
+		)
+	)
+)}
+```
 
 
 
 Multiple object_ids, multiple attributes :
 ---------------------------------------------
-	{def $nodeList = fetch(content, list, hash(
-								'parent_node_id', XX,
-	        					'extended_attribute_filter', hash(
-	                              		'id', 'orfilter',
-	                              		'params', array(
-	                              			'or',
-	                              			array('classe1/attribut1', array(70, 71), 'or'),
-	                              			array('classe2/attribut2', array(80, 81), 'and')
-	                              			)
-	                          )))}
+```tpl
+{def $nodeList = fetch(content, list,
+	hash(
+		'parent_node_id', XX,
+		'extended_attribute_filter', hash(
+			'id', 'orfilter',
+			'params', array(
+				'or',
+				array('classe1/attribut1', array(70, 71), 'or'),
+				array('classe2/attribut2', array(80, 81), 'and')
+			)
+		)
+	)
+)}
+```
 
 ---------------------------------------------
 
