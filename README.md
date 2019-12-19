@@ -4,6 +4,10 @@ OWOrFilter (for OpenWide Object Relations Filter) provides an extended attribute
 This filter supports basic logical operators.
 This will work with single relations as well as multiple.
 
+
+[![Latest Stable Version](https://img.shields.io/packagist/v/aplia/oworfilter.svg?style=flat-square)](https://packagist.org/packages/aplia/oworfilter)
+[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%205.3-8892BF.svg?style=flat-square)](https://php.net/)
+
 Usage
 -------------------------
 
