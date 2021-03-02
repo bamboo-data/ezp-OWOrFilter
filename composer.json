@@ -4,12 +4,11 @@
     "keywords": ["ezextension", "filter", "extended attribute filter"],
     "homepage": "https://github.com/Aplia/oworfilter",
     "type": "ezpublish-legacy-extension",
-    "license": "GPL-2.0",
+    "license": "GPL-2.0-only",
     "extra": {
         "ezpublish-legacy-extension-name": "oworfilter"
     },
     "require": {
-        "php": ">=5.3",
-        "composer/composer": ">=1.0"
+        "php": ">=5.3"
     }
 }
